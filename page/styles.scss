@@ -1,0 +1,36 @@
+@import "./app/styles/layout.style.scss";
+@import "./app/styles/text.style.scss";
+@import "./app/styles/button.style.scss";
+@import "./app/styles/form.style.scss";
+
+
+:root {
+    --color-primary: #f60;
+    --color-secondary: #f80;
+
+    --color-darker: #111;
+    --color-dark: #222;
+    --color-neutral: #333;
+    --color-bright: #888;
+
+    --color-error: #f00;
+    --color-error-background: #fbb;
+    --color-success: #090;
+    --color-success-background: #6c6;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-neutral);
+    /* background: linear-gradient(-45deg, #f60, #f49); */
+}
