@@ -1,14 +1,64 @@
+// Variables
+$main-margin-desktop: 20%;
+$main-margin-tablet: 10%;
+$main-margin-mobile: 5%;
+
+$primary:          #c93333;
+$primary-light:    #ff8079;
+$primary-dark:     #b40a25;
+$secondary:        #323d4d;
+$secondary-light:  #5c6779;
+$secondary-dark:   #0b1725;
+$light:            #efefef;
+
+$theme-colors: (
+    "primary":          $primary,
+    "primary-light":    $primary-light,
+    "primary-dark":     $primary-dark,
+    "secondary":        $secondary,
+    "secondary-light":  $secondary-light,
+    "secondary-dark":   $secondary-dark,
+    "light":            $light
+);
+
 * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(-45deg, #f60, #f49);
+    min-height: 100%;
 }
+
+main {
+    margin-left: $main-margin-mobile;
+    margin-right: $main-margin-mobile;
+}
+
+@media (min-width: 768px) {
+    main {
+        margin-left: $main-margin-tablet;
+        margin-right: $main-margin-tablet;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        margin-left: $main-margin-desktop;
+        margin-right: $main-margin-desktop;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary;
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

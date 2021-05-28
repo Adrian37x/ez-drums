@@ -4,13 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
+//#region directives
+import { NgVarDirective } from './directives/ng-var.directive';
+//#endregion
+
 //#region components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-//#endregion
-
-//#region directives
-import { NgVarDirective } from './directives/ng-var.directive';
+import { TutorialComponent } from './components/tutorial/tutorial.component';
 //#endregion
 
 @NgModule({
@@ -18,6 +19,7 @@ import { NgVarDirective } from './directives/ng-var.directive';
         // components
         AppComponent,
         HomeComponent,
+        TutorialComponent,
 
         // directives
         NgVarDirective
