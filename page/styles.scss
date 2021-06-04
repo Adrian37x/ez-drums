@@ -61,5 +61,17 @@ h1, h2, h3, h4, h5, h6 {
     color: $primary;
 }
 
+.img-contain {
+    @extend .h-100, .w-100;
+    object-fit: contain;
+    object-position: center;
+}
+
+.img-cover {
+    @extend .h-100, .w-100;
+    object-fit: cover;
+    object-position: center;
+}
+
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
