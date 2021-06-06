@@ -1,7 +1,26 @@
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-secondary-dark">
-    <div class="container-fluid justify-content-center">
-        <object data="../assets/other/logo.svg" type="image/svg" width="100" height="100"></object>
-        <a class="navbar-brand" routerLink="/">EZ-Drums</a>
+    <div class="container-fluid mx-2">
+        <a class="me-3" routerLink="/">
+            <object data="../assets/other/Logo.svg" height="60" width="60" style="user-select: none; pointer-events: none;"></object>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav me-auto justify-content-center mb-2 mb-lg-0">
+                <div class="nav-item">
+                    <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" routerLink="/tutorials" routerLinkActive="active">Tutorials</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" routerLink="/impressum" routerLinkActive="active">Impressum</a>
+                </div>
+            </div>
+        </div>
     </div>
 </nav>
 

@@ -11,7 +11,9 @@ import { NgVarDirective } from './directives/ng-var.directive';
 //#region components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { TutorialsComponent } from './components/tutorials/tutorials.component';
 import { TutorialComponent } from './components/tutorial/tutorial.component';
+import { ImpressumComponent } from './components/impressum/impressum.component';
 //#endregion
 
 @NgModule({
@@ -19,7 +21,9 @@ import { TutorialComponent } from './components/tutorial/tutorial.component';
         // components
         AppComponent,
         HomeComponent,
+        TutorialsComponent,
         TutorialComponent,
+        ImpressumComponent,
 
         // directives
         NgVarDirective

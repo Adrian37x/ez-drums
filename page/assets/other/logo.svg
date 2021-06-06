@@ -2,110 +2,111 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
-   version="1.1"
-   id="svg5"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="drums1.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview7"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     showgrid="false"
-     inkscape:zoom="1.0998546"
-     inkscape:cx="512.34045"
-     inkscape:cy="657.81422"
-     inkscape:window-width="2560"
-     inkscape:window-height="1377"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
-  <defs
-     id="defs2" />
-  <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:66.2913px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.65729"
-       x="78.24073"
-       y="165.78125"
-       id="text2673"
-       transform="scale(0.93545702,1.0689962)"><tspan
-         sodipodi:role="line"
-         id="tspan2671"
-         style="stroke-width:1.65729"
-         x="78.24073"
-         y="165.78125">EZ</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20.0094px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.500235"
-       x="68.349403"
-       y="219.13731"
-       id="text8991"
-       transform="scale(1.1312759,0.88395765)"><tspan
-         sodipodi:role="line"
-         id="tspan8989"
-         style="stroke-width:0.500235"
-         x="68.349403"
-         y="219.13731">Drums</tspan></text>
-    <ellipse
-       style="fill:#000000;fill-rule:evenodd;stroke-width:0.408928"
-       id="path12159-9"
-       cx="29.590925"
-       cy="192.55254"
-       rx="9.0008717"
-       ry="11.226804" />
-    <ellipse
-       style="fill:#000000;stroke-width:0.264583"
-       id="path12183"
-       cx="29.576338"
-       cy="121.78967"
-       rx="5.2731957"
-       ry="6.4639177" />
-    <rect
-       style="fill:#000000;stroke-width:0.429092"
-       id="rect12253"
-       width="10.530955"
-       height="66.34021"
-       x="24.318586"
-       y="121.44946" />
-    <ellipse
-       style="fill:#000000;fill-rule:evenodd;stroke-width:0.408928"
-       id="path12159-9-0"
-       cx="-60.621647"
-       cy="126.20407"
-       rx="9.0008717"
-       ry="11.226804"
-       transform="scale(-1,1)" />
-    <ellipse
-       style="fill:#000000;stroke-width:0.264583"
-       id="path12183-0"
-       cx="-60.607059"
-       cy="196.96693"
-       rx="5.2731957"
-       ry="6.4639177"
-       transform="scale(-1,1)" />
-    <rect
-       style="fill:#000000;stroke-width:0.429092"
-       id="rect12253-0"
-       width="10.530955"
-       height="66.34021"
-       x="-65.880272"
-       y="130.96695"
-       transform="scale(-1,1)" />
-  </g>
+    width="500"
+    height="500"
+    viewBox="0 0 132.29167 132.29167"
+    version="1.1"
+    id="svg5"
+    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+    sodipodi:docname="drums1.svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg">
+    <sodipodi:namedview
+        id="namedview7"
+        pagecolor="#ffffff"
+        bordercolor="#666666"
+        borderopacity="1.0"
+        inkscape:pageshadow="2"
+        inkscape:pageopacity="0.0"
+        inkscape:pagecheckerboard="0"
+        inkscape:document-units="px"
+        showgrid="false"
+        inkscape:zoom="1.0998546"
+        inkscape:cx="240.48633"
+        inkscape:cy="294.12979"
+        inkscape:window-width="2560"
+        inkscape:window-height="1377"
+        inkscape:window-x="-8"
+        inkscape:window-y="-8"
+        inkscape:window-maximized="1"
+        inkscape:current-layer="layer1"
+        units="px" />
+    <defs
+        id="defs2" />
+    <g
+        inkscape:label="Ebene 1"
+        inkscape:groupmode="layer"
+        id="layer1">
+        <text
+        xml:space="preserve"
+        style="font-style:normal;font-weight:normal;font-size:66.2913px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.65729"
+        x="56.896454"
+        y="77.432175"
+        id="text2673"
+        transform="scale(0.93545702,1.0689962)"><tspan
+            sodipodi:role="line"
+            id="tspan2671"
+            style="stroke-width:1.65729"
+            x="56.896454"
+            y="77.432175">EZ</tspan></text>
+        <text
+        xml:space="preserve"
+        style="font-style:normal;font-weight:normal;font-size:20.0094px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.500235"
+        x="50.699726"
+        y="112.29417"
+        id="text8991"
+        transform="scale(1.1312759,0.88395766)"><tspan
+            sodipodi:role="line"
+            id="tspan8989"
+            style="stroke-width:0.500235"
+            x="50.699726"
+            y="112.29417">Drums</tspan></text>
+        <ellipse
+        style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.408928"
+        id="path12159-9"
+        cx="9.6242704"
+        cy="98.107712"
+        rx="9.0008717"
+        ry="11.226804" />
+        <ellipse
+        style="fill:#ffffff;stroke-width:0.264583"
+        id="path12183"
+        cx="9.609683"
+        cy="27.344851"
+        rx="5.2731957"
+        ry="6.4639177" />
+        <rect
+        style="fill:#ffffff;stroke-width:0.429092"
+        id="rect12253"
+        width="10.530955"
+        height="66.34021"
+        x="4.3519316"
+        y="27.004641" />
+        <ellipse
+        style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.408928"
+        id="path12159-9-0"
+        cx="-40.654991"
+        cy="31.759249"
+        rx="9.0008717"
+        ry="11.226804"
+        transform="scale(-1,1)" />
+        <ellipse
+        style="fill:#ffffff;stroke-width:0.264583"
+        id="path12183-0"
+        cx="-40.640404"
+        cy="102.52212"
+        rx="5.2731957"
+        ry="6.4639177"
+        transform="scale(-1,1)" />
+        <rect
+        style="fill:#ffffff;stroke-width:0.429092"
+        id="rect12253-0"
+        width="10.530955"
+        height="66.34021"
+        x="-45.913616"
+        y="36.522129"
+        transform="scale(-1,1)" />
+    </g>
 </svg>
