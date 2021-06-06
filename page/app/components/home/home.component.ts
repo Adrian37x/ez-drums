@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Tutorial } from 'page/app/models/tutorial.model';
 
 @Component({
@@ -39,5 +40,25 @@ export class HomeComponent {
         )
     ];
 
-    constructor() { }
+    private clickSound: HTMLAudioElement;
+
+    playClickSound() {
+        this.clickSound.play();
+    }
+
+    constructor(
+        private router: Router
+    ) {
+        this.loadClickSound();
+    }
+
+    private loadClickSound() {
+        this.clickSound = new Audio();
+        this.clickSound.src = "../assets/audio/Bonk.mp3";
+        this.clickSound.load();
+    }
+
+    selectTutorial() {
+        this.router.navigate(["tutorial"]);
+    }
 }
