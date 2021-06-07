@@ -61,6 +61,15 @@ h1, h2, h3, h4, h5, h6 {
     color: $primary;
 }
 
+p, span, strong, small {
+    color: $light;
+}
+
+a:not(.nav-link) {
+    @extend .text-decoration-none;
+    color: $primary-light!important;
+}
+
 .img-contain {
     @extend .h-100, .w-100;
     object-fit: contain;
