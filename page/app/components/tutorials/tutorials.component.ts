@@ -11,32 +11,27 @@ export class TutorialsComponent {
         new Tutorial(
             "Basics",
             "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-            "",
-            []
+            "Thumbnail-Basics"
         ),
         new Tutorial(
             "Basics 2",
             "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-            "",
-            []
+            "Thumbnail-Basics2"
         ),
         new Tutorial(
             "Combined Patterns",
             "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-            "",
-            []
+            "Thumbnail-Combined-Patterns"
         ),
         new Tutorial(
             "Drum Rolls",
             "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-            "",
-            []
+            "Thumbnail-DrumRolls"
         ),
         new Tutorial(
             "Ghost Notes",
             "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-            "",
-            []
+            "Thumbnail-Ghost-Notes"
         )
     ];
 
