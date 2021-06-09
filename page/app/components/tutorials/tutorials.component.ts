@@ -1,39 +1,14 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { Tutorial } from "page/app/models/tutorial.model";
+import { tutorialOverviewData } from "./tutorial-overview.data";
 
 @Component({
     selector: "app-tutorials",
     templateUrl: "./tutorials.component.html"
 })
 export class TutorialsComponent {
-    tutorials: Tutorial[] = [
-        new Tutorial(
-            "Basics",
-            "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-            "Thumbnail-Basics"
-        ),
-        new Tutorial(
-            "Basics 2",
-            "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-            "Thumbnail-Basics2"
-        ),
-        new Tutorial(
-            "Combined Patterns",
-            "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-            "Thumbnail-Combined-Patterns"
-        ),
-        new Tutorial(
-            "Drum Rolls",
-            "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-            "Thumbnail-DrumRolls"
-        ),
-        new Tutorial(
-            "Ghost Notes",
-            "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-            "Thumbnail-Ghost-Notes"
-        )
-    ];
+    tutorials: Tutorial[] = [];
 
     private clickSound: HTMLAudioElement;
 
@@ -45,7 +20,9 @@ export class TutorialsComponent {
     constructor(
         private router: Router
     ) {
+        window.scrollTo(0, 0);
         this.loadClickSound();
+        this.tutorials = tutorialOverviewData;
     }
 
     private loadClickSound() {

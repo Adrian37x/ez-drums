@@ -1,5 +1,27 @@
-<h1 class="text-center mb-4 pb-3 border-bottom border-primary-light">
-    <i class="bi bi-award"></i>
-    {{tutorialTitle}}
-</h1>
+<ng-container *ngIf="tutorial">
+    <h1 class="text-center mb-4 pb-3 border-bottom border-primary-light">
+        <i class="bi bi-award"></i>
+        {{tutorial.title}}
+    </h1>
+    
+    <ng-container *ngFor="let step of tutorial.steps; let i = index">
+        <h3 class="mb-4">Step {{i + 1}} - {{step.name}}</h3>
+        
+        <div class="row mb-3">
+            <div class="col-lg-6">
+                <video class="w-100 shadow" [src]="'../../../assets/videos/' + step.video + '.mp4'" [alt]="step.video" controls></video>
+            </div>
+            <div class="col d-flex flex-column">
+                <p *ngIf="step.description">{{step.description}}</p>
+                
+                <img class="mw-100 mx-auto d-block rounded shadow" [src]="'../../../assets/notes/' + step.note + '.png'" [alt]="step.note">
+            </div>
+        </div>
+        
+        <div *ngIf="step.extra">
+            <img class="mw-100 mx-auto d-block rounded shadow" [src]="'../../../assets/' + step.extra" [alt]="step.extra">
+        </div>
 
+        <div class="mb-5"></div>
+    </ng-container>
+</ng-container>

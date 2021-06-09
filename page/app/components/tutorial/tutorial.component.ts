@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+import { TutorialDetail } from "page/app/models/tutorial-detail.model";
 import { Subscription } from "rxjs";
+import { tutorialDetailData } from "./tutorial-detail.data";
 
 @Component({
     selector: 'app-tutorial',
@@ -10,19 +12,20 @@ export class TutorialComponent implements OnInit, OnDestroy {
     private routeSubscription: Subscription;
     private loadSound: HTMLAudioElement;
 
-    tutorialTitle: string;
+    tutorial: TutorialDetail;
 
     constructor (
         private route: ActivatedRoute
     ) {
+        window.scrollTo(0, 0);
         this.loadClickSound();
-
-        this.routeSubscription = this.route.params.subscribe(params => {
-            this.tutorialTitle = params.title;
-        });
     }
-
+    
     ngOnInit() {
+        this.routeSubscription = this.route.params.subscribe(params => {
+            this.tutorial = tutorialDetailData.find(t => t.title == params.title) || tutorialDetailData[0];
+        });
+
         this.loadSound.play();
     }
 

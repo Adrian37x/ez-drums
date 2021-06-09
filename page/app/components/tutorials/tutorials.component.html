@@ -3,7 +3,7 @@
     Tutorials
 </h1>
 
-<div *ngFor="let tutorial of tutorials; let i = index" class="card mb-3 bg-secondary-light shadow pe-auto">
+<div *ngFor="let tutorial of tutorials; let i = index" class="card mb-3 bg-secondary-light shadow pe-auto overflow-hidden">
     <div class="row g-0">
         <div class="col-md-3" style="height: 200px;" (click)="playClickSound()">
             <img class="img-cover" [src]="'../../../assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.thumbnail">
