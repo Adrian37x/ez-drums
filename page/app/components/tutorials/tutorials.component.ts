@@ -11,12 +11,7 @@ export class TutorialsComponent {
     tutorials: Tutorial[] = [];
 
     private clickSound: HTMLAudioElement;
-
-    playClickSound() {
-        this.clickSound.pause();
-        this.clickSound.play();
-    }
-
+    
     constructor(
         private router: Router
     ) {
@@ -24,13 +19,17 @@ export class TutorialsComponent {
         this.loadClickSound();
         this.tutorials = tutorialOverviewData;
     }
-
+    
     private loadClickSound() {
         this.clickSound = new Audio();
         this.clickSound.src = "../assets/audio/Bonk.mp3";
         this.clickSound.load();
     }
 
+    playClickSound() {
+        this.clickSound.play();
+    }
+        
     selectTutorial(tutorial: Tutorial) {
         this.router.navigate([`tutorial/${tutorial.title}`]);
     }

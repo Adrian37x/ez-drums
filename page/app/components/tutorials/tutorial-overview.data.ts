@@ -4,12 +4,14 @@ export const tutorialOverviewData: Tutorial[] = [
     new Tutorial(
         "Basics",
         "Make yourself familiar with percussion. Here you learn the basics of rythmic patterns.",
-        "Thumbnail-Basics"
+        "thumbnails-basics/Thumbnail-Basics-460",
+        "w",
+        ["thumbnails-basics/Thumbnail-Basics-920", "thumbnails-basics/Thumbnail-Basics"]
     ),
     new Tutorial(
         "Basics 2",
         "Something a bit more advanced. But I'm sure you got this! Less goooooooooooooooo, yeye!",
-        "Thumbnail-Basics2"
+        "thumbnails-basics2/Thumbnail-Basics2"
     ),
     new Tutorial(
         "Combined Patterns",
