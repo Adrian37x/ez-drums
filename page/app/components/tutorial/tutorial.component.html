@@ -9,17 +9,17 @@
         
         <div class="row mb-3">
             <div class="col-lg-6">
-                <video class="w-100 shadow" [src]="'../../../assets/videos/' + step.video + '.mp4'" [alt]="step.video" controls></video>
+                <video class="w-100 shadow" [src]="'../../../assets/videos/' + step.video + '.mp4'" controls></video>
             </div>
             <div class="col d-flex flex-column">
                 <p *ngIf="step.description">{{step.description}}</p>
                 
-                <img class="mw-100 mx-auto d-block rounded shadow" [src]="'../../../assets/notes/' + step.note + '.png'" [alt]="step.note">
+                <img class="mw-100 mx-auto d-block rounded shadow" [src]="'../../../assets/notes/' + step.note + '.png'" [alt]="step.name + '-Note'">
             </div>
         </div>
         
         <div *ngIf="step.extra">
-            <img class="mw-100 mx-auto d-block rounded shadow" [src]="'../../../assets/' + step.extra" [alt]="step.extra">
+            <img class="mw-100 mx-auto d-block rounded shadow" [src]="'../../../assets/' + step.extra" [alt]="step.name + '-Extra'">
         </div>
 
         <div class="mb-5"></div>

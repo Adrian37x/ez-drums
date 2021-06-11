@@ -8,11 +8,11 @@
         <div class="col-md-3" style="height: 200px;" (click)="playClickSound()">
             <!-- Thumbnail -->
             <ng-container *ngIf="tutorial.thumbnailType == 'default'">
-                <img class="img-cover" [src]="'../../../assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.thumbnail">
+                <img class="img-cover" [src]="'../../../assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.title + '-Thumbnail'">
             </ng-container>
 
             <ng-container *ngIf="tutorial.thumbnailType == 'w'">
-                <img class="img-cover" [src]="'../../../assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.thumbnail"
+                <img class="img-cover" [src]="'../../../assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.title + '-Thumbnail'"
                     [srcset]="'../../../assets/thumbnails/' + tutorial.additionalThumbnails[1] + 
                     '.png 2000w, ../../../assets/thumbnails/' + tutorial.additionalThumbnails[0] + 
                     '.png 1300w, ../../../assets/thumbnails/' + tutorial.thumbnail + '.png 768w'">
