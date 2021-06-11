@@ -11,7 +11,9 @@ export const tutorialOverviewData: Tutorial[] = [
     new Tutorial(
         "Basics 2",
         "Something a bit more advanced. But I'm sure you got this! Less goooooooooooooooo, yeye!",
-        "thumbnails-basics2/Thumbnail-Basics2"
+        "thumbnails-basics2/Thumbnail-Basics2-460",
+        "x",
+        ["thumbnails-basics2/Thumbnail-Basics2-920", "thumbnails-basics2/Thumbnail-Basics2"]
     ),
     new Tutorial(
         "Combined Patterns",
