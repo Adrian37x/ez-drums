@@ -22,7 +22,7 @@ export class TutorialsComponent {
     
     private loadClickSound() {
         this.clickSound = new Audio();
-        this.clickSound.src = "../assets/audio/Bonk.mp3";
+        this.clickSound.src = "./assets/audio/Bonk.mp3";
         this.clickSound.load();
     }
 

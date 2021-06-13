@@ -36,7 +36,7 @@ export class TutorialComponent implements OnInit, OnDestroy {
 
     private loadClickSound() {
         this.loadSound = new Audio();
-        this.loadSound.src = "../assets/audio/Tutorial.mp3";
+        this.loadSound.src = "./assets/audio/Tutorial.mp3";
         this.loadSound.load();
     }
 }

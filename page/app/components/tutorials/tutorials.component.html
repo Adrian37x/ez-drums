@@ -8,21 +8,21 @@
         <div class="col-md-3" style="height: 200px;" (click)="playClickSound()">
             <!-- Thumbnail -->
             <ng-container *ngIf="tutorial.thumbnailType == 'default'">
-                <img class="img-cover" [src]="'../../../assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.title + '-Thumbnail'">
+                <img class="img-cover" [src]="'./assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.title + '-Thumbnail'">
             </ng-container>
 
             <ng-container *ngIf="tutorial.thumbnailType == 'w'">
-                <img class="img-cover" [src]="'../../../assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.title + '-Thumbnail'"
-                    [srcset]="'../../../assets/thumbnails/' + tutorial.additionalThumbnails[1] + 
-                    '.png 2000w, ../../../assets/thumbnails/' + tutorial.additionalThumbnails[0] + 
-                    '.png 1300w, ../../../assets/thumbnails/' + tutorial.thumbnail + '.png 768w'">
+                <img class="img-cover" [src]="'./assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.title + '-Thumbnail'"
+                    [srcset]="'./assets/thumbnails/' + tutorial.additionalThumbnails[1] + 
+                    '.png 2000w, ./assets/thumbnails/' + tutorial.additionalThumbnails[0] + 
+                    '.png 1300w, ./assets/thumbnails/' + tutorial.thumbnail + '.png 768w'">
             </ng-container>
 
             <ng-container *ngIf="tutorial.thumbnailType == 'x'">
-                <img class="img-cover" [src]="'../../../assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.title + '-Thumbnail'"
-                    [srcset]="'../../../assets/thumbnails/' + tutorial.additionalThumbnails[1] + 
-                    '.png 3x, ../../../assets/thumbnails/' + tutorial.additionalThumbnails[0] + 
-                    '.png 2x, ../../../assets/thumbnails/' + tutorial.thumbnail + '.png 1x'">
+                <img class="img-cover" [src]="'./assets/thumbnails/' + tutorial.thumbnail + '.png'" [alt]="tutorial.title + '-Thumbnail'"
+                    [srcset]="'./assets/thumbnails/' + tutorial.additionalThumbnails[1] + 
+                    '.png 3x, ./assets/thumbnails/' + tutorial.additionalThumbnails[0] + 
+                    '.png 2x, ./assets/thumbnails/' + tutorial.thumbnail + '.png 1x'">
             </ng-container>
             <!-- End Thumbnail -->
         </div>
