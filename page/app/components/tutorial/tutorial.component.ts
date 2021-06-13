@@ -26,7 +26,6 @@ export class TutorialComponent implements OnInit, OnDestroy {
             this.tutorial = tutorialDetailData.find(t => t.title == params.title) || tutorialDetailData[0];
         });
 
-        this.loadSound.playbackRate = Math.random() + 0.5;
         this.loadSound.play();
     }
 
