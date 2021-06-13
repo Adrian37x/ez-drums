@@ -3,7 +3,10 @@
     Home
 </h1>
 
-<video id="trailerPlayer" class="w-100" controls></video>
+<video id="trailerPlayer" class="w-100" controls>
+    <track src="../../../assets/other/subtitlesEn.vtt" kind="subtitles" srclang="en" label="English">
+    <track src="../../../assets/other/subtitlesDe.vtt" kind="subtitles" srclang="de" label="Deutsch">
+</video>
 
 <button class="d-block mx-auto mt-2 btn-lg btn-primary" (click)="switchAudio()">
     <i class="bi bi-music-note-beamed"></i> 
