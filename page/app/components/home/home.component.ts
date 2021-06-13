@@ -7,10 +7,14 @@ declare const shaka: any;
 })
 export class HomeComponent implements AfterViewInit {
     private readonly manifestUrl = `${location.origin}${location.pathname}assets/streaming/dash/manifest.mpd`;
+
+    private videoElement: HTMLVideoElement;
     private player: any;
     private isMusicTrack1: boolean = true;
     
     ngAfterViewInit() {
+        this.videoElement = document.getElementById("trailerPlayer") as HTMLVideoElement;
+
         // Install built-in polyfills to patch browser incompatibilities.
         shaka.polyfill.installAll();
         
@@ -19,6 +23,14 @@ export class HomeComponent implements AfterViewInit {
             this.initPlayer();
         } else {
             console.error('Browser not supported!');
+        }
+    }
+
+    playPauseVideo() {
+        if (this.videoElement.paused) {
+            this.videoElement.play();
+        } else {
+            this.videoElement.pause();
         }
     }
 
@@ -35,7 +47,7 @@ export class HomeComponent implements AfterViewInit {
     }
   
     private initPlayer() {
-        this.player = new shaka.Player(document.getElementById("trailerPlayer"));
+        this.player = new shaka.Player(this.videoElement);
     
         this.player.addEventListener('error', this.onErrorEvent);
 
