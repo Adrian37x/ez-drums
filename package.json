@@ -5,7 +5,8 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
-        "build-prod": "ng build --prod --base-href /sj_20_21/infa3a_08/"
+        "build-prod": "ng build --prod",
+        "build-gibz": "ng build --prod --base-href /sj_20_21/infa3a_08/"
     },
     "private": true,
     "dependencies": {

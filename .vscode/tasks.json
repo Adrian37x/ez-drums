@@ -5,9 +5,9 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "Build Prod",
-            "detail": "Build Application for M152 FTP Server",
-            "command": "npm run build-prod",
+            "label": "Build Prod GIBZ",
+            "detail": "Build Application for GIBZ M152 FTP Server",
+            "command": "npm run build-gibz",
             "problemMatcher": []
         }
     ]
