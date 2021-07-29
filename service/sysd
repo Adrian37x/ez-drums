@@ -1,0 +1,15 @@
+[Unit]
+Description=Managed Service ez-drums, ez-drums.eggsectuer.com
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=3
+User=server
+WorkingDirectory=/home/server/ez-drums
+ExecStart=/home/server/ez-drums/service/start
+
+[Install]
+WantedBy=multi-user.target
